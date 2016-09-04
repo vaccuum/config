@@ -27,11 +27,11 @@ class Config implements IConfig, IConfigLoader
     {
         foreach ($this->get('bundles') as $name => $bundle)
         {
-            $directory = DIR_ROOT . '/app/' . $name;
+            $directory = "/app/{$name}";
 
             if (isset($bundle['path']))
             {
-                $directory = DIR_ROOT . "{$bundle['path']}/{$name}";
+                $directory = "{$bundle['path']}/{$name}";
             }
 
             $this->loadDirectory($directory);
