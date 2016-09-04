@@ -1,0 +1,25 @@
+{
+    "license": "MIT",
+    "name": "vaccuum/config",
+    "description": "Config object for vaccuum framework.",
+    "keywords": [
+        "vaccuum",
+        "framework",
+        "config",
+        "object"
+    ],
+    "authors": [
+        {
+            "name": "Sebastian Łepczyński",
+            "email": "lepczynski.s@outlook.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Vaccuum\\Config\\": "source/"
+        }
+    },
+    "require": {
+        "php": ">=5.6.0"
+    }
+}
